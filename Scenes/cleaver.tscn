@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://4ljanuqwy6ri"]
+
+[ext_resource type="Texture2D" uid="uid://bbawi3w4omkv0" path="res://Assets/Sprites/Cleaver.png" id="1_mh30u"]
+[ext_resource type="Script" path="res://Scripts/cleaver.gd" id="2_tmpj8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hswpj"]
+size = Vector2(15, 6)
+
+[node name="Cleaver" type="CharacterBody2D"]
+script = ExtResource("2_tmpj8")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_mh30u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(7.5, 8)
+shape = SubResource("RectangleShape2D_hswpj")

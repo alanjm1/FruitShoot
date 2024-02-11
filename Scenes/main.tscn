@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://b17e1iubud0rx"]
+[gd_scene load_steps=3 format=3 uid="uid://b17e1iubud0rx"]
+
+[ext_resource type="Texture2D" uid="uid://ncanxfmrxexw" path="res://Assets/Sprites/Pineapple.png" id="1_t0waa"]
+[ext_resource type="PackedScene" uid="uid://4ljanuqwy6ri" path="res://Scenes/cleaver.tscn" id="1_uetgs"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Placeholder" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Placeholder"]
+position = Vector2(309, 104)
+texture = ExtResource("1_t0waa")
+
+[node name="Cleaver" parent="." instance=ExtResource("1_uetgs")]
