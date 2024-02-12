@@ -1,19 +1,22 @@
-[gd_scene format=3 uid="uid://b5g582t23k4c3"]
+[gd_scene load_steps=2 format=3 uid="uid://b5g582t23k4c3"]
 
-[node name="Control" type="Control"]
+[ext_resource type="Script" path="res://Scripts/score_counter.gd" id="1_bkcgj"]
+
+[node name="Score" type="Control" groups=["score_label"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bkcgj")
 
 [node name="ScoreContainer" type="Container" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ScoreLabel" type="Label" parent="ScoreContainer"]
+[node name="ScoreLabel" type="Label" parent="ScoreContainer" groups=["score_label"]]
 layout_mode = 2
 text = "
 "

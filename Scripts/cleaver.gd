@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-@export var speed: int = 400
-@export var accel: int = 10
-@export var degrees_per_second: float = 360.0
+@export var speed: int = 500
+@export var accel: int = 15
+@export var degrees_per_second: float = 540.0
 
 func _physics_process(delta: float) -> void:
 	var direction: Vector2 = Input.get_vector("left", "right", "up", "down")
@@ -17,11 +17,12 @@ func _physics_process(delta: float) -> void:
 
 	#TODO: Fix this
 	if (Input.is_action_just_released("spin")):
-		var wind_down_time: float = 1.0
-		var timer: float = 0.0
-		while timer <= wind_down_time:
-			rotate(delta * deg_to_rad(degrees_per_second))
-			timer += delta
+		#var wind_down_time: float = 1.0
+		#var timer: float = 0.0
+		#while timer <= wind_down_time:
+			#rotate(delta * deg_to_rad(degrees_per_second))
+			#timer += delta
+		pass
 
 	move_and_slide()
 
