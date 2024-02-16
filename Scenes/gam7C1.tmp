@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqqjlvyc4ysxk"]
+
+[ext_resource type="Script" path="res://Scenes/game_timer.gd" id="1_efk4j"]
+
+[node name="GameTimer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_efk4j")
+
+[node name="TimerLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Time remaining: "
+
+[node name="Time" type="Label" parent="."]
+layout_mode = 0
+offset_left = 131.0
+offset_right = 171.0
+offset_bottom = 23.0
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Restart" type="Button" parent="."]
+z_index = 100
+layout_mode = 0
+offset_left = 576.0
+offset_top = 320.0
+offset_right = 641.0
+offset_bottom = 351.0
+text = "Restart"
+
+[node name="FinalScoreLabel" type="Label" parent="."]
+z_index = 100
+layout_mode = 0
+offset_left = 560.0
+offset_top = 280.0
+offset_right = 691.0
+offset_bottom = 303.0

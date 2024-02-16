@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/cleaver.gd" id="2_tmpj8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hswpj"]
-size = Vector2(60, 17)
+size = Vector2(60, 21.5)
 
 [node name="Cleaver" type="CharacterBody2D"]
 script = ExtResource("2_tmpj8")
@@ -13,5 +13,5 @@ script = ExtResource("2_tmpj8")
 texture = ExtResource("1_mh30u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(30, 35.5)
+position = Vector2(30, 33.75)
 shape = SubResource("RectangleShape2D_hswpj")
